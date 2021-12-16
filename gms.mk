@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
 
 ## Overlays
 PRODUCT_PACKAGES += \
-    GmsOverlay
+    GmsOverlay \
+    GmsSettingsProviderOverlay
 
 ## Permissions
 PRODUCT_COPY_FILES += \
