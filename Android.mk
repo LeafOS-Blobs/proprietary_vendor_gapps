@@ -22,6 +22,7 @@ LOCAL_MODULE := GmsCore
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -29,6 +30,7 @@ LOCAL_MODULE := GoogleCalendarSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -36,6 +38,7 @@ LOCAL_MODULE := GoogleContactsSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -43,6 +46,7 @@ LOCAL_MODULE := GooglePartnerSetup
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -50,6 +54,7 @@ LOCAL_MODULE := GoogleRestore
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -57,6 +62,7 @@ LOCAL_MODULE := GoogleServicesFramework
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -64,6 +70,7 @@ LOCAL_MODULE := Phonesky
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -72,6 +79,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Provision
+LOCAL_CERTIFICATE := PRESIGNED
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
