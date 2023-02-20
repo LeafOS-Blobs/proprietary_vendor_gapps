@@ -69,6 +69,13 @@ LOCAL_OVERRIDES_PACKAGES := Provision
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Wellbeing
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.google.android.dialer.support
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_PRODUCT_MODULE := true

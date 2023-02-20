@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     GoogleRestore \
     GoogleServicesFramework \
     Phonesky \
-    SetupWizard
+    SetupWizard \
+    Wellbeing
 
 ## FS Verity
 PRODUCT_COPY_FILES += \
