@@ -17,6 +17,7 @@
 ## Apps
 PRODUCT_PACKAGES += \
     GmsCore \
+    GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
     GooglePartnerSetup \
     GoogleRestore \
