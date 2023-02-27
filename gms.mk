@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LeafOS Project
+# Copyright (C) 2022-2023 The LeafOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,11 +17,21 @@
 ## Apps
 PRODUCT_PACKAGES += \
     GmsCore \
+    GoogleCalculator \
+    GoogleCalendar \
     GoogleCalendarSyncAdapter \
+    GoogleChrome \
+    GoogleContacts \
     GoogleContactsSyncAdapter \
+    GoogleDeskClock \
+    GoogleDialer \
+    GoogleDrive \
+    GoogleMessaging \
     GooglePartnerSetup \
+    GooglePhotos \
     GoogleRestore \
     GoogleServicesFramework \
+    LatinIMEGoogle \
     Phonesky \
     SetupWizard \
     Wellbeing
