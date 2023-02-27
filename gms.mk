@@ -16,10 +16,20 @@
 
 ## Apps
 PRODUCT_PACKAGES += \
+    Gboard \
     GmsCore \
+    GoogleCalculator \
+    GoogleCalendar \
     GoogleCalendarSyncAdapter \
+    GoogleChrome \
+    GoogleContacts \
     GoogleContactsSyncAdapter \
+    GoogleDeskClock \
+    GoogleDialer \
+    GoogleDrive \
+    GoogleMessaging \
     GooglePartnerSetup \
+    GooglePhotos \
     GoogleRestore \
     GoogleServicesFramework \
     Phonesky \

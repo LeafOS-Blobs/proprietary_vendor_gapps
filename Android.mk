@@ -18,10 +18,31 @@ ifeq ($(WITH_GMS), true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Gboard
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := LatinIME
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GmsCore
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleCalculator
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := ExactCalculator
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleCalendar
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Etar
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
@@ -32,6 +53,20 @@ LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleChrome
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := TrichromeChrome6432
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleContacts
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Contacts
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleContactsSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
@@ -39,10 +74,46 @@ LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleDeskClock
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OEVRRIDES_PACKAGES := DeskClock
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleDialer
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Dialer
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleDrive
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := MuPDF
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleMessaging
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := messaging
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GooglePartnerSetup
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := GooglePhotos
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Gallery2
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
