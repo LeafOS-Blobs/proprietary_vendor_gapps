@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+define check-jni-dex-compression
+endef
+
 ifeq ($(LOCAL_MODULE_CLASS), APPS)
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SDK_VERSION := current
