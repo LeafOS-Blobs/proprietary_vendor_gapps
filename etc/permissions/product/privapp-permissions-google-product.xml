@@ -273,6 +273,7 @@
         <permission name="android.permission.UWB_PRIVILEGED"/>
         <permission name="android.permission.WRITE_GSERVICES"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
     </privapp-permissions>
     <privapp-permissions package="com.google.android.gms.supervision">
         <permission name="android.permission.ACCESS_NETWORK_CONDITIONS"/>
