@@ -28,14 +28,12 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleCalendarSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleContactsSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
