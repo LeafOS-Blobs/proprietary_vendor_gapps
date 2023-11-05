@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LeafOS Project
+# Copyright (C) 2022-2023 The LeafOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,19 +16,23 @@
 
 ## Apps
 PRODUCT_PACKAGES += \
-    GmsCore \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
-    GooglePartnerSetup \
-    GoogleRestore \
+    GoogleRestorePrebuilt \
     GoogleServicesFramework \
+    PartnerSetupPrebuilt \
     Phonesky \
-    SetupWizard \
-    Wellbeing
+    PrebuiltGmsCore \
+    SetupWizardPrebuilt \
+    WellbeingPrebuilt
 
 ## FS Verity
 PRODUCT_COPY_FILES += \
-    vendor/gapps/etc/security/fsverity/gms_fsverity_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/gms_fsverity_cert.der
+    $(call find-copy-subdir-files,*.der,vendor/gapps/etc/security/fsverity,$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity)
+
+## GMS version
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.gmsversion=14_202310
 
 ## Libraries
 PRODUCT_PACKAGES += \
