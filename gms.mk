@@ -16,19 +16,23 @@
 
 ## Apps
 PRODUCT_PACKAGES += \
-    GmsCore \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
-    GooglePartnerSetup \
-    GoogleRestore \
+    GoogleRestorePrebuilt \
     GoogleServicesFramework \
+    PartnerSetupPrebuilt \
     Phonesky \
-    SetupWizard \
-    Wellbeing
+    PrebuiltGmsCore \
+    SetupWizardPrebuilt \
+    WellbeingPrebuilt
 
 ## FS Verity
 PRODUCT_COPY_FILES += \
-    vendor/gapps/etc/security/fsverity/gms_fsverity_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/gms_fsverity_cert.der
+    $(call find-copy-subdir-files,*.der,vendor/gapps/etc/security/fsverity,$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity)
+
+## GMS version
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.gmsversion=14_202310
 
 ## Libraries
 PRODUCT_PACKAGES += \

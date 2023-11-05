@@ -18,13 +18,6 @@ ifeq ($(WITH_GMS), true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GmsCore
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
-include vendor/gapps/build/gms_module.mk
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleCalendarSyncAdapter
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
@@ -37,14 +30,7 @@ LOCAL_PRODUCT_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GooglePartnerSetup
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_PRIVILEGED_MODULE := true
-include vendor/gapps/build/gms_module.mk
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := GoogleRestore
+LOCAL_MODULE := GoogleRestorePrebuilt
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
@@ -58,6 +44,13 @@ LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := PartnerSetupPrebuilt
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := Phonesky
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
@@ -65,7 +58,14 @@ LOCAL_PRIVILEGED_MODULE := true
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := SetupWizard
+LOCAL_MODULE := PrebuiltGmsCore
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+include vendor/gapps/build/gms_module.mk
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SetupWizardPrebuilt
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
@@ -73,7 +73,7 @@ LOCAL_OVERRIDES_PACKAGES := Provision
 include vendor/gapps/build/gms_module.mk
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Wellbeing
+LOCAL_MODULE := WellbeingPrebuilt
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true
