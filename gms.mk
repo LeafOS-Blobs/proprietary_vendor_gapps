@@ -33,7 +33,8 @@ PRODUCT_COPY_FILES += \
 
 ## GMS version
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.gmsversion=14_202310
+    ro.com.google.gmsversion=14_202310 \
+    ro.opa.eligible_device?=true
 
 ## Libraries
 PRODUCT_PACKAGES += \
