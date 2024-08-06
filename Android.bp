@@ -28,6 +28,20 @@ genrule {
     out: ["PrebuiltGmsCore.apk"],
 }
 
+genrule {
+    name: "gen_Velvet_arm64",
+    defaults: ["7z_genrule_defaults"],
+    srcs: ["prebuilt/arm64/Velvet.apk.*"],
+    out: ["Velvet.apk"],
+}
+
+genrule {
+    name: "gen_Velvet_x86_64",
+    defaults: ["7z_genrule_defaults"],
+    srcs: ["prebuilt/x86_64/Velvet.apk.*"],
+    out: ["Velvet.apk"],
+}
+
 android_app_import {
     name: "GoogleCalendarSyncAdapter",
     product_specific: true,
@@ -137,6 +151,25 @@ android_app_import {
         },
         x86_64: {
             apk: "prebuilt/x86_64/SetupWizardPrebuilt.apk",
+        },
+    },
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "Velvet",
+    product_specific: true,
+    privileged: true,
+    preprocessed: true,
+    presigned: true,
+    arch: {
+        arm64: {
+            apk: ":gen_Velvet_arm64",
+        },
+        x86_64: {
+            apk: ":gen_Velvet_x86_64",
         },
     },
     dex_preopt: {

@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     Phonesky \
     PrebuiltGmsCore \
     SetupWizardPrebuilt \
+    Velvet \
     WellbeingPrebuilt
 
 ## FS Verity
